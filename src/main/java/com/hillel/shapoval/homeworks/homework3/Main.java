@@ -14,5 +14,8 @@ public class Main {
 //        System.out.println(name2);
 //        System.out.println(name + latitude + degrees);
 //        System.out.println(name1 + longitude + degrees);
+
+
+        System.out.println();
     }
 }
