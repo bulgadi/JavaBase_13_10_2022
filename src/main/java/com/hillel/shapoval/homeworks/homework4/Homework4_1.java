@@ -15,7 +15,7 @@ public class Homework4_1 {
         int MinWarriorAttack = 9;
         int MinBowmanAttack = 35;
         int MinRiderAttack = 12;
-        double MinNumber = LiNumber * 1.5;
+        int MinNumber = (int) (LiNumber * 1.5);
         System.out.println("Сила армії Мінь = " + ((MinWarriorAttack * MinNumber) + (MinBowmanAttack * MinNumber) + (MinRiderAttack * MinNumber)));
 
 
