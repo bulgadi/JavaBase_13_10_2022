@@ -1,6 +1,6 @@
 package com.hillel.shapoval.homeworks.homework4;
 
-public class homework4_2 {
+public class Homework4_2 {
 
     public static void main(String[] args) {
 

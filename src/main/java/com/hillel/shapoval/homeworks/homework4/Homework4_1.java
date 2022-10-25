@@ -1,6 +1,6 @@
 package com.hillel.shapoval.homeworks.homework4;
 
-public class homework4_1 {
+public class Homework4_1 {
 
     public static void main(String[] args) {
 
@@ -19,10 +19,6 @@ public class homework4_1 {
         System.out.println("Сила армії Мінь = " + ((MinWarriorAttack * MinNumber) + (MinBowmanAttack * MinNumber) + (MinRiderAttack * MinNumber)));
 
 
-      /*
-        int x = 4;
-        int y = 7;
-        System.out.println(y-- + (x++ - ++x) + (x++ - --y) + y++ + --x); // 7 + (4 - 6) + (6 - 6) + 6 + 6 = 7 - 2 + 12 = 17
-       */
+
     }
 }
