@@ -115,8 +115,8 @@ public class Homework_5 {
         double resultT1 = ((double) (pl1T1 + pl2T1 + pl3T1 + pl4T1 + pl3T2) / PLAYER);
         double resultT2 = ((double) (pl1T2 + pl2T2 + pl3T2 + pl4T2 + pl5T2) / PLAYER);
 
-        double result1Fr = (pl1T1 + pl2T1 + pl3T1 + pl4T1 + pl5T1);
-        double result2Fr = (pl1T2 + pl2T2 + pl3T2 + pl4T2 + pl5T2);
+        int result1Fr = (pl1T1 + pl2T1 + pl3T1 + pl4T1 + pl5T1);
+        int result2Fr = (pl1T2 + pl2T2 + pl3T2 + pl4T2 + pl5T2);
 
 
         if (resultT1 > resultT2) {
