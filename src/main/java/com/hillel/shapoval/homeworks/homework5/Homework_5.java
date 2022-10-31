@@ -122,8 +122,7 @@ public class Homework_5 {
         if (resultT1 > resultT2) {
             System.out.println("Перемогла команда " + nameTeam1 + " набравши в сумі " + result1Fr + " очків. " +
                     "Середній результат гравця команди " + nameTeam1 + " становить " + resultT1 + " очків.");
-        }
-        if (resultT1 < resultT2) {
+        } else if (resultT1 < resultT2) {
             System.out.println("Перемогла команда " + nameTeam2 + " набравши в сумі " + result2Fr + " очків. " +
                     "Середній результат гравця команди " + nameTeam2 + " становить " + resultT2 + " очків.");
         } else {
