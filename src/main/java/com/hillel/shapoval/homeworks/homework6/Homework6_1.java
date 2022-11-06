@@ -10,6 +10,7 @@ public class Homework6_1 {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
         int random = (int) (Math.random() * 11);
+        System.out.println(random);
 
         System.out.println("У Вас є три спроби відгадати число.");
         System.out.println("Введіть перше число:");
@@ -21,6 +22,7 @@ public class Homework6_1 {
                     System.out.println("Ви ввели число: " + number1);
                     if (random == number1) {
                         System.out.println("Ви виграли!!!");
+                        System.exit(0);
                     } else {
                         System.out.println("На жаль, ви не вгадали, у Вас є ще 2 спроби");
                         break;
@@ -44,6 +46,7 @@ public class Homework6_1 {
                     System.out.println("Ви ввели число: " + number2);
                     if (random == number2) {
                         System.out.println("Ви виграли!!!");
+                        System.exit(0);
                     } else {
                         System.out.println("На жаль, ви не вгадали, у Вас є ще 1 спроба");
                         break;
@@ -65,6 +68,7 @@ public class Homework6_1 {
                     System.out.println("Ви ввели число: " + number3);
                     if (random == number3) {
                         System.out.println("Ви виграли!!!");
+                        break;
                     } else {
                         System.out.println("Дуже шкода, але Ви програли(");
                         break;
