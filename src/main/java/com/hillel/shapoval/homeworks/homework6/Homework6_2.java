@@ -1,4 +1,5 @@
 package com.hillel.shapoval.homeworks.homework6;
+
 public class Homework6_2 {
     //  У Японії числа 4 та 9 вважаються нещасливими.
     //  Вам потрібно пронумерувати 100 космічних шатлів для перевезення людей на Марс так,
