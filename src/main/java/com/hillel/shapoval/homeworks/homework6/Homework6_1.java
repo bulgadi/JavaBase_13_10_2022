@@ -10,7 +10,6 @@ public class Homework6_1 {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
         int random = (int) (Math.random() * 11);
-        System.out.println(random);
 
         System.out.println("У Вас є три спроби відгадати число.");
         System.out.println("Введіть перше число:");
