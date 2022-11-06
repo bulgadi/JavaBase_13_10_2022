@@ -8,12 +8,13 @@ public class Homework6_2 {
 
     public static void main(String[] args) {
         int counter = 1;
-        for (int i = 1; counter <= 100; i++) {
+        int counterAll = 100;
+        for (int i = 1; counter <= counterAll; i++) {
             if (i / 10 == 4 || i / 10 == 9 || i % 10 == 4 || i % 10 == 9 || i / 10 == 14) {
                 continue;
             }
             System.out.println(counter);
-            System.out.println("shuttle number: " + i);
+            System.out.println("Shuttle number: " + i);
             counter++;
         }
     }
