@@ -9,6 +9,7 @@ public class Person {
         System.out.println("a." + person1 + "\n" + "b." + person2 + "\n" + "c." + person3);
 
     }
+
     static String personInfo(String name, String surname, String сity, String number){
         String result = "Зателефонувати громадянину " + name + " " + surname +
                 " із міста " + сity + " можна за номером " + number;
