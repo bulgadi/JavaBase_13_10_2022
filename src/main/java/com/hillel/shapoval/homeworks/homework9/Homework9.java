@@ -1,4 +1,4 @@
-package com.hillel.shapoval.homeworks.howework9;
+package com.hillel.shapoval.homeworks.homework9;
 
 import java.util.Scanner;
 
