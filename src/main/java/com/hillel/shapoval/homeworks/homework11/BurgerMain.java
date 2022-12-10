@@ -9,6 +9,5 @@ public class BurgerMain {
         System.out.println();
         Burger doubleMeat = new Burger("булочка", "майонез", "сир",
                 "зелень", "м'ясо", "мʼясо");
-
     }
 }
