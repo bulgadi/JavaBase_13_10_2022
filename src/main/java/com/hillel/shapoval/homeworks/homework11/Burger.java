@@ -15,6 +15,7 @@ public class Burger {
         this.cheese = cheese;
         this.salad = salad;
         this.meat1 = meat;
+        System.out.print("Звичайний бургер: ");
         printComposition();
     }
 
@@ -23,6 +24,7 @@ public class Burger {
         this.cheese = cheese;
         this.salad = salad;
         this.meat1 = meat;
+        System.out.print("Дієтичний бургер: ");
         printComposition();
     }
 
@@ -33,11 +35,11 @@ public class Burger {
         this.salad = salad;
         this.meat1 = meat1;
         this.meat2 = meat2;
+        System.out.print("Бургер з подвійним мʼясом: ");
         printComposition();
     }
 
     private void printComposition() {
-        System.out.print("Склад бургера: ");
         if (this.bun != null){
             System.out.print(this.bun + " ");
         }
