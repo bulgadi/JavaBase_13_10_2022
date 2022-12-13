@@ -11,7 +11,7 @@ public class Data {
     private int weight;
     private int pressure;
     private int numberSteps;
-    private int year = 2020;
+    private static final int YEAR = 2020;
     private int age;
 
     public Data(String name, int dayBirth, int monthBirth, int yearBirth, String email, String phone, String surname,
@@ -26,30 +26,38 @@ public class Data {
         this.weight = weight;
         this.pressure = pressure;
         this.numberSteps = numberSteps;
-        this.age = year - yearBirth;
+        this.age = YEAR - yearBirth;
     }
 
     public void printAccountInfo() {
-        System.out.println(toString());
+        System.out.println("Iмʼя: " + name + " " +
+                "Прізвище: " + surname + "\n" +
+                "Дата народження: " + dayBirth + "." + monthBirth + "." + yearBirth + "\n" +
+                "Емейл: " + email + "\n" +
+                "Телефон: " + phone + "\n" +
+                "Вага: " + weight + "\n" +
+                "Тиск: " + pressure + "\n" +
+                "К-ть кроів за день: " + numberSteps);
         System.out.println("Вік: " + getAge() + "р.");
+        System.out.println();
     }
 
-    @Override
-    public String toString() {
-        return "Data{" +
-                "name='" + name + '\'' +
-                ", dayBirth=" + dayBirth +
-                ", monthBirth=" + monthBirth +
-                ", yearBirth=" + yearBirth +
-                ", email='" + email + '\'' +
-                ", phone='" + phone + '\'' +
-                ", surname='" + surname + '\'' +
-                ", weight=" + weight +
-                ", pressure=" + pressure +
-                ", numberSteps=" + numberSteps +
-                ", year=" + year +
-                '}';
-    }
+//    @Override
+//    public String toString() {
+//        return "Data{" +
+//                "name='" + name + '\'' +
+//                ", dayBirth=" + dayBirth +
+//                ", monthBirth=" + monthBirth +
+//                ", yearBirth=" + yearBirth +
+//                ", email='" + email + '\'' +
+//                ", phone='" + phone + '\'' +
+//                ", surname='" + surname + '\'' +
+//                ", weight=" + weight +
+//                ", pressure=" + pressure +
+//                ", numberSteps=" + numberSteps +
+//                ", year=" + year +
+//                '}';
+//    }
 
     public int getAge() {
         return age;
