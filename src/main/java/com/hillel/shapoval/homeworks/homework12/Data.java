@@ -1,6 +1,7 @@
 package com.hillel.shapoval.homeworks.homework12;
 
 public class Data {
+    private static final int YEAR = 2020;
     private String name;
     private int dayBirth;
     private int monthBirth;
@@ -11,7 +12,6 @@ public class Data {
     private int weight;
     private int pressure;
     private int numberSteps;
-    private static final int YEAR = 2020;
     private int age;
 
     public Data(String name, int dayBirth, int monthBirth, int yearBirth, String email, String phone, String surname,
