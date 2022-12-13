@@ -42,23 +42,6 @@ public class Data {
         System.out.println();
     }
 
-//    @Override
-//    public String toString() {
-//        return "Data{" +
-//                "name='" + name + '\'' +
-//                ", dayBirth=" + dayBirth +
-//                ", monthBirth=" + monthBirth +
-//                ", yearBirth=" + yearBirth +
-//                ", email='" + email + '\'' +
-//                ", phone='" + phone + '\'' +
-//                ", surname='" + surname + '\'' +
-//                ", weight=" + weight +
-//                ", pressure=" + pressure +
-//                ", numberSteps=" + numberSteps +
-//                ", year=" + year +
-//                '}';
-//    }
-
     public int getAge() {
         return age;
     }
