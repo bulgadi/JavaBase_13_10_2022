@@ -30,16 +30,40 @@ public class Data {
     }
 
     public void printAccountInfo() {
-        System.out.println("Iмʼя: " + name + " " +
+        System.out.println("Iмʼя: " + getName() + " " +
                 "Прізвище: " + surname + "\n" +
-                "Дата народження: " + dayBirth + "." + monthBirth + "." + yearBirth + "\n" +
-                "Емейл: " + email + "\n" +
-                "Телефон: " + phone + "\n" +
+                "Дата народження: " + getDayBirth() + "." + getMonthBirth() + "." + getYearBirth() + "\n" +
+                "Емейл: " + getEmail() + "\n" +
+                "Телефон: " + getPhone() + "\n" +
                 "Вага: " + weight + "\n" +
                 "Тиск: " + pressure + "\n" +
                 "К-ть кроів за день: " + numberSteps);
         System.out.println("Вік: " + getAge() + "р.");
         System.out.println();
+    }
+
+    public String getName() {
+        return name;
+    }
+
+    public int getDayBirth() {
+        return dayBirth;
+    }
+
+    public int getMonthBirth() {
+        return monthBirth;
+    }
+
+    public int getYearBirth() {
+        return yearBirth;
+    }
+
+    public String getEmail() {
+        return email;
+    }
+
+    public String getPhone() {
+        return phone;
     }
 
     public int getAge() {
