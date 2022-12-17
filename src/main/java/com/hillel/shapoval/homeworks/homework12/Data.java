@@ -2,12 +2,12 @@ package com.hillel.shapoval.homeworks.homework12;
 
 public class Data {
     private static final int YEAR = 2020;
-    private String name;
-    private int dayBirth;
-    private int monthBirth;
-    private int yearBirth;
-    private String email;
-    private String phone;
+    private final String name;
+    private final int dayBirth;
+    private final int monthBirth;
+    private final int yearBirth;
+    private final String email;
+    private final String phone;
     private String surname;
     private int weight;
     private int pressure;
