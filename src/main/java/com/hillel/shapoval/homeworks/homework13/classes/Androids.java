@@ -1,4 +1,7 @@
-package com.hillel.shapoval.homeworks.homework13;
+package com.hillel.shapoval.homeworks.homework13.classes;
+
+import com.hillel.shapoval.homeworks.homework13.interfaces.LinuxOS;
+import com.hillel.shapoval.homeworks.homework13.interfaces.Smartphones;
 
 public class Androids extends Phone implements Smartphones, LinuxOS {
 

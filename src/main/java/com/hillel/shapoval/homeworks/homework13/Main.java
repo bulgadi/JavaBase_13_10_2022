@@ -1,5 +1,11 @@
 package com.hillel.shapoval.homeworks.homework13;
 
+import com.hillel.shapoval.homeworks.homework13.classes.Androids;
+import com.hillel.shapoval.homeworks.homework13.classes.IPhones;
+import com.hillel.shapoval.homeworks.homework13.classes.Phone;
+import com.hillel.shapoval.homeworks.homework13.interfaces.IOS;
+import com.hillel.shapoval.homeworks.homework13.interfaces.LinuxOS;
+import com.hillel.shapoval.homeworks.homework13.interfaces.Smartphones;
 public class Main {
 
     public static void main(String[] args) {
