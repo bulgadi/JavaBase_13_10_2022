@@ -23,11 +23,7 @@ public class Main {
 
         if (phone instanceof Smartphones) {
             ((Smartphones) phone).call();
-        }
-        if (phone instanceof Smartphones) {
             ((Smartphones) phone).sms();
-        }
-        if (phone instanceof Smartphones) {
             ((Smartphones) phone).internet();
         }
         if (phone instanceof IOS) {
