@@ -28,7 +28,7 @@ public class Main {
 
         for (MusicStyles musicStyles : musicStyle) {
             for (Group group : groups) {
-                musicStyles.start(group);
+                musicStyles.playMusic(group);
 
             }
         }

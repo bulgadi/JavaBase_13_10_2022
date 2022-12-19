@@ -5,7 +5,7 @@ import com.hillel.shapoval.homeworks.homework14.groups.Group;
 
 public class PopMusic extends MusicStyles {
     @Override
-    public void start(Group group) {
+    public void playMusic(Group group) {
         group.rock();
     }
 }
