@@ -4,9 +4,7 @@ import com.hillel.shapoval.homeworks.homework14.styles.MusicStyles;
 
 public class RockMusic extends MusicStyles {
 
-
     private String bandName;
-
 
     public RockMusic(String name) {
         this.bandName = name;

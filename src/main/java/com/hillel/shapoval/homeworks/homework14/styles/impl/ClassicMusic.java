@@ -6,11 +6,9 @@ public class ClassicMusic extends MusicStyles {
 
     private String bandName;
 
-
     public ClassicMusic(String name) {
         this.bandName = name;
     }
-
     @Override
     public void playMusic() {
         System.out.println("Play classic music of band: " + bandName);

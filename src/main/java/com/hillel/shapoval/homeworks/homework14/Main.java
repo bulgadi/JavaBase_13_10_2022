@@ -1,11 +1,9 @@
 package com.hillel.shapoval.homeworks.homework14;
 
-
 import com.hillel.shapoval.homeworks.homework14.styles.MusicStyles;
 import com.hillel.shapoval.homeworks.homework14.styles.impl.ClassicMusic;
 import com.hillel.shapoval.homeworks.homework14.styles.impl.PopMusic;
 import com.hillel.shapoval.homeworks.homework14.styles.impl.RockMusic;
-
 
 public class Main {
     public static void main(String[] args) {
@@ -33,19 +31,11 @@ public class Main {
                 new RockMusic("U2")
         };
         playMusic(rockMusicBand);
-
-
     }
-
 
     private static void playMusic(MusicStyles[] bands){
         for (MusicStyles band : bands) {
             band.playMusic();
         }
     }
-
-
-
-
-
 }
