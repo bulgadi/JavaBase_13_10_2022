@@ -8,13 +8,13 @@ import com.hillel.shapoval.homeworks.homework14.styles.impl.RockMusic;
 public class Main {
     public static void main(String[] args) {
 
-        ClassicMusic[] classicMusicGroup = {
+        ClassicMusic[] classicMusicBand = {
                 new ClassicMusic("Orchestra"),
                 new ClassicMusic("Violin"),
                 new ClassicMusic("Garra"),
                 new ClassicMusic("Hooll")
         };
-        playMusic(classicMusicGroup);
+        playMusic(classicMusicBand);
 
         PopMusic[] popMusicBand = {
                 new PopMusic("ABBA"),
