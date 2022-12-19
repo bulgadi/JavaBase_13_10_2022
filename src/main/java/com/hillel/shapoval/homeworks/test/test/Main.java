@@ -27,9 +27,10 @@ public class Main {
         };
 
 //        for (MusicStyles musicStyle: musicStyles) {
-//            for (Group grouped : group) {
-////                musicStyle.playMusic(group);
-//                musicStyle.playMusic();
+//            for (Group groupd : group) {
+//                musicStyles.playMuisic(group);
+//                musicStyles.playMusic();
+//
 //
 //
 //            }
