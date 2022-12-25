@@ -34,8 +34,6 @@ public class Main {
              }
         }
 
-
-
         switch (drinksType){
             case TEA: {
                 System.out.println("We are making tea." + "\n" + "Water + cleaning tea");
