@@ -38,24 +38,4 @@ public class Drinks{
       int sum = quantity * PRICE_COCA_COLA;
       System.out.println("The total cost: " + sum + "$");
    }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 }
