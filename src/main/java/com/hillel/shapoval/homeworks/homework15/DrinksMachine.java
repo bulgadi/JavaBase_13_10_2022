@@ -8,6 +8,4 @@ public enum DrinksMachine {
     MOJITO,
     MINERAL,
     COCA_COLA
-
-
 }
