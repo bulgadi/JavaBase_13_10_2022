@@ -6,14 +6,10 @@ import java.util.Scanner;
 public class Main {
 
     public static void main(String[] args) {
-
         runMachine();
-
     }
 
     static void runMachine(){
-
-
 
         DrinksMachine[] drinksMachines = DrinksMachine.values();
         DrinksMachine drinksType = null;
@@ -37,8 +33,6 @@ public class Main {
              }
         }
 
-
-
         int quantity = -1;
 
         while (true){
@@ -59,26 +53,29 @@ public class Main {
 
         switch (drinksType){
             case TEA: {
+                Drinks.costTea(quantity);
+                break;
             }
             case COFFEE: {
-                Drinks.costCoffee(scanner.nextInt());
+                Drinks.costCoffee(quantity);
+                break;
             }
-            case MOJITO:{
-
+            case MOJITO: {
+                Drinks.costMojito(quantity);
+                break;
             }
-            case MINERAL:{
-
+            case MINERAL: {
+                Drinks.costMineral(quantity);
+                break;
             }
-            case LEMONADE:{
-
+            case LEMONADE: {
+                Drinks.costLemonade(quantity);
+                break;
             }
-            case COCA_COLA:{
-
+            case COCA_COLA: {
+                Drinks.costCocaCola(quantity);
+                break;
             }
         }
-
-
-
     }
-
 }
