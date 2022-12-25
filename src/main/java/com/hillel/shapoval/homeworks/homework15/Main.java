@@ -23,6 +23,7 @@ public class Main {
                 if(userValue.equals(drinksMachine.toString())){
                     drinksType = DrinksMachine.valueOf(userValue);
                     System.out.println("You chose: " + drinksType);
+                    System.out.println();
                     break;
                 }
             }
@@ -31,6 +32,43 @@ public class Main {
              }else {
                  System.out.println("Wrong data. Try again.");
              }
+        }
+
+
+
+        switch (drinksType){
+            case TEA: {
+                System.out.println("We are making tea." + "\n" + "Water + cleaning tea");
+                System.out.println();
+                break;
+            }
+            case COFFEE: {
+                System.out.println("We are making coffee." + "\n" + "Water + coffee beans");
+                System.out.println();
+                break;
+            }
+            case MOJITO: {
+                System.out.println("We are making mojito." + "\n"
+                        + "Soda water + sugar + fresh lime juice");
+                System.out.println();
+                break;
+            }
+            case MINERAL: {
+                System.out.println("We are making mineral." + "\n" + "Water + minerals");
+                System.out.println();
+                break;
+            }
+            case LEMONADE: {
+                System.out.println("We are making lemonade." + "\n"
+                        + "Soda water + sugar + fresh lemon juice");
+                System.out.println();
+                break;
+            }
+            case COCA_COLA: {
+                System.out.println("We are making coca cola." + "\n" + "Soda water + coca");
+                System.out.println();
+                break;
+            }
         }
 
         int quantity = -1;
