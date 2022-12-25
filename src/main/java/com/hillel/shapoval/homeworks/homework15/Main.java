@@ -38,24 +38,30 @@ public class Main {
         }
 
 
-        Drinks.scannerQuantity();
 
+        int quantity = -1;
 
+        while (true){
+            System.out.println("Please, specify the quantity of drinks");
+            if (scanner.hasNextInt()){
+                quantity = scanner.nextInt();
 
-
-
-
-
+                if (quantity>= 0){
+                    break;
+                } else {
+                    System.out.println("Please enter a positive quantity");
+                }
+            } else {
+                System.out.println("Wrong data. Try again.");
+                scanner.nextLine();
+            }
+        }
 
         switch (drinksType){
             case TEA: {
-
-
-
-
             }
             case COFFEE: {
-                Drinks.costCoffee();
+                Drinks.costCoffee(scanner.nextInt());
             }
             case MOJITO:{
 

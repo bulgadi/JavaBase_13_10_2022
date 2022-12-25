@@ -12,35 +12,8 @@ public class Drinks{
    private static final int PRICE_COCA_COLA = 25;
 
 
+   public static void costCoffee (int quantity){
 
-   int h = 0;
-
-   public int getH() {
-      return h;
-   }
-
-   static void scannerQuantity(){
-      Scanner scanner = new Scanner(System.in);
-      int quantity = -1;
-
-      while (true){
-         System.out.println("Please, specify the quantity of drinks");
-         if (scanner.hasNextInt()){
-            quantity = scanner.nextInt();
-
-            if (quantity>= 0){
-               break;
-            } else {
-               System.out.println("Please enter a positive quantity");
-            }
-         } else {
-            System.out.println("Wrong data. Try again.");
-            scanner.nextLine();
-         }
-      }
-   }
-
-   public static void costCoffee (){
       int sum = quantity * PRICE_COFFEE;
       System.out.println(sum);
    }
@@ -59,6 +32,23 @@ public class Drinks{
    static void costCocaCola (int quantity, Drinks drinks){
       int sum = quantity * PRICE_COCA_COLA;
    }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
