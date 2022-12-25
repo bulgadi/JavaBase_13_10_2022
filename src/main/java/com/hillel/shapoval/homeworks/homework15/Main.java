@@ -53,26 +53,32 @@ public class Main {
 
         switch (drinksType){
             case TEA: {
+                System.out.println("\n" + "The quantity of selected tea: " + quantity);
                 Drinks.costTea(quantity);
                 break;
             }
             case COFFEE: {
+                System.out.println("\n" + "The quantity of selected coffee: " + quantity);
                 Drinks.costCoffee(quantity);
                 break;
             }
             case MOJITO: {
+                System.out.println("\n" + "The quantity of selected mojito: " + quantity);
                 Drinks.costMojito(quantity);
                 break;
             }
             case MINERAL: {
+                System.out.println("\n" + "The quantity of selected mineral: " + quantity);
                 Drinks.costMineral(quantity);
                 break;
             }
             case LEMONADE: {
+                System.out.println("\n" + "The quantity of selected lemonade: " + quantity);
                 Drinks.costLemonade(quantity);
                 break;
             }
             case COCA_COLA: {
+                System.out.println("\n" + "The quantity of selected Coca Cola: " + quantity);
                 Drinks.costCocaCola(quantity);
                 break;
             }
