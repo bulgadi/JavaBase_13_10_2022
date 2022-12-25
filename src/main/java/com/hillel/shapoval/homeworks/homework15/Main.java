@@ -13,7 +13,7 @@ public class Main {
 
     static void runMachine(){
 
-        int number = -1;
+
 
         DrinksMachine[] drinksMachines = DrinksMachine.values();
         DrinksMachine drinksType = null;
@@ -38,35 +38,24 @@ public class Main {
         }
 
 
-            while (true){
-                System.out.println("Please, specify the number of drinks");
-                if (scanner.hasNextInt()){
-                    number = scanner.nextInt();
-
-                    if (number >= 0){
-                        break;
-                    } else {
-                        System.out.println("Please enter a positive number");
-                    }
-                } else {
-                    System.out.println("Wrong data. Try again.");
-                    scanner.nextLine();
-                }
-            }
+        Drinks.scannerQuantity();
 
 
-        Drinks drinks = new Drinks();
+
+
+
 
 
 
         switch (drinksType){
             case TEA: {
 
-                drinks.costCoffee();
+
 
 
             }
             case COFFEE: {
+                Drinks.costCoffee();
             }
             case MOJITO:{
 

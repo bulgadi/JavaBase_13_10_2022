@@ -1,6 +1,7 @@
 package com.hillel.shapoval.homeworks.homework15;
 
 
+import java.util.Scanner;
 
 public class Drinks{
    private static final int PRICE_COFFEE = 20;
@@ -12,24 +13,51 @@ public class Drinks{
 
 
 
+   int h = 0;
 
-   public static void costCoffee (int number){
-      int sum = number  * PRICE_COFFEE;
+   public int getH() {
+      return h;
    }
-   static void costTea (int number, Drinks drinks){
-      int sum = number * PRICE_TEA;
+
+   static void scannerQuantity(){
+      Scanner scanner = new Scanner(System.in);
+      int quantity = -1;
+
+      while (true){
+         System.out.println("Please, specify the quantity of drinks");
+         if (scanner.hasNextInt()){
+            quantity = scanner.nextInt();
+
+            if (quantity>= 0){
+               break;
+            } else {
+               System.out.println("Please enter a positive quantity");
+            }
+         } else {
+            System.out.println("Wrong data. Try again.");
+            scanner.nextLine();
+         }
+      }
    }
-   static void costLemonade (int number, Drinks drinks){
-      int sum = number * PRICE_LEMONADE;
+
+   public static void costCoffee (){
+      int sum = quantity * PRICE_COFFEE;
+      System.out.println(sum);
    }
-   static void costMojito (int number, Drinks drinks){
-      int sum = number * PRICE_MOJITO;
+   static void costTea (int quantity, Drinks drinks){
+      int sum = quantity * PRICE_TEA;
    }
-   static void costMineral (int number, Drinks drinks){
-      int sum = number * PRICE_MINERAL;
+   static void costLemonade (int quantity, Drinks drinks){
+      int sum = quantity * PRICE_LEMONADE;
    }
-   static void costCocaCola (int number, Drinks drinks){
-      int sum = number * PRICE_COCA_COLA;
+   static void costMojito (int quantity, Drinks drinks){
+      int sum = quantity * PRICE_MOJITO;
+   }
+   static void costMineral (int quantity, Drinks drinks){
+      int sum = quantity * PRICE_MINERAL;
+   }
+   static void costCocaCola (int quantity, Drinks drinks){
+      int sum = quantity * PRICE_COCA_COLA;
    }
 
 
