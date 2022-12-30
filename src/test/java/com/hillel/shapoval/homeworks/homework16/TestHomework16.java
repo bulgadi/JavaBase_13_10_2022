@@ -15,7 +15,7 @@ public class TestHomework16 {
 
         for (int i = 0; i < a; i++) {
             for (int j = 0; j < b; j++) {
-                mas[i][j] = (int) (Math.random() * 6);
+                mas[i][j] = (int) (Math.random() * 11);
             }
         }
         boolean square = Homework16.runArray(mas);
