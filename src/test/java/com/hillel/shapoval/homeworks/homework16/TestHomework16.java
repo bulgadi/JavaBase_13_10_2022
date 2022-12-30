@@ -11,14 +11,14 @@ public class TestHomework16 {
         int a = 8;
         int b = 8;
 
-        int[][] mas1 = new int[a][b];
+        int[][] mas = new int[a][b];
 
         for (int i = 0; i < a; i++) {
             for (int j = 0; j < b; j++) {
-                mas1[i][j] = (int) (Math.random() * 6);
+                mas[i][j] = (int) (Math.random() * 6);
             }
         }
-        boolean square = Homework16.runArray(mas1);
+        boolean square = Homework16.runArray(mas);
         Assertions.assertTrue(square);
     }
 }

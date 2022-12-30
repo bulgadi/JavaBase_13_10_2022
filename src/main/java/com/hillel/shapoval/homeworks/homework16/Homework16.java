@@ -1,10 +1,10 @@
 package com.hillel.shapoval.homeworks.homework16;
 
 public class Homework16 {
-    public static boolean runArray(int[][] mas1) {
+    public static boolean runArray(int[][] mas) {
 
-        for (int i = 0, l = mas1.length; i < l; i++) {
-            if (mas1[i].length != l) {
+        for (int i = 0, l = mas.length; i < l; i++) {
+            if (mas[i].length != l) {
                 return false;
             } else {
                 return true;
@@ -12,13 +12,16 @@ public class Homework16 {
         }
         return false;
     }
-    public static double arithmeticMean(int[] mas1) {
+    public static double arithmeticMean(int[] mas) {
         double average = 0;
 
-        for (int i = 0; i < mas1.length; i++) {
-                average = average + mas1[i];
+        if (mas.length > 0){
+
+            for (int j : mas) {
+                average = average + j;
+                average /= mas.length;
+            }
         }
-        average /= mas1.length;
         return average;
     }
 }
