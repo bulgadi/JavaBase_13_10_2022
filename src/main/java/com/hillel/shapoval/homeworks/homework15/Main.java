@@ -1,6 +1,7 @@
 package com.hillel.shapoval.homeworks.homework15;
 
 import java.util.Arrays;
+import java.util.Objects;
 import java.util.Scanner;
 
 public class Main {
@@ -14,23 +15,45 @@ public class Main {
         DrinksMachine[] drinksMachines = DrinksMachine.values();
         DrinksMachine drinksType = null;
         Scanner scanner = new Scanner(System.in);
+        String answer = "";
+//        int counter = 1;
 
-        System.out.println("Please, choose a drink:" + Arrays.toString(drinksMachines));
 
-        while (true){
-             String userValue = scanner.nextLine().toUpperCase();
+        while (!Objects.equals(answer, "NO")){
+            answer = "";
+            System.out.println("Please, choose a drink:" + Arrays.toString(drinksMachines));
+            String userValue = scanner.nextLine().toUpperCase();
+
+//            String[] userValue = new String[counter];
+//            for (int i = 0; i < counter ; i++) {
+//                String[] userValue = scanner.nextLine().toUpperCase();
+//            }
+
             for (DrinksMachine drinksMachine: drinksMachines) {
                 if(userValue.equals(drinksMachine.toString())){
                     drinksType = DrinksMachine.valueOf(userValue);
                     System.out.println("You chose: " + drinksType);
+//                    counter++;
                     System.out.println();
                     break;
                 }
             }
              if (drinksType != null){
-                 break;
              }else {
                  System.out.println("Wrong data. Try again.");
+             }
+
+             while (!Objects.equals(answer, "YES")){
+                 System.out.println("Would you like to choose another drink? YES/NO");
+                 answer = scanner.nextLine().toUpperCase();
+
+                 if(answer.equals("NO") || answer.equals("YES") ){
+                     if (answer.equals("NO")){
+                         break;
+                     }
+                 } else {
+                     System.out.println("Please, write YES or NO");
+                 }
              }
         }
 
