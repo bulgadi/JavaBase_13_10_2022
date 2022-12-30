@@ -8,8 +8,8 @@ public class TestHomework16 {
     @Test
     public void test1(){
 
-        int a = 8;
-        int b = 8;
+        int a = 10;
+        int b = 10;
 
         int[][] mas = new int[a][b];
 
