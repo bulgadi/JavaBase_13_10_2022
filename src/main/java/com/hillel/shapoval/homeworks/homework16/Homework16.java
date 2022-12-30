@@ -1,7 +1,5 @@
 package com.hillel.shapoval.homeworks.homework16;
 
-import java.lang.reflect.Array;
-
 public class Homework16 {
     public static boolean runArray(int[][] mas) {
 
