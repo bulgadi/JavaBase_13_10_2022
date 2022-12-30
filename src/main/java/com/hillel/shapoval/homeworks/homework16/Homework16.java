@@ -14,7 +14,6 @@ public class Homework16 {
     }
     public static double arithmeticMean(int[] mas1, int a) {
         double average = 0;
-        double average1 = 0;
 
         for (int i = 0; i < a; i++) {
                 average = average + mas1[i];
