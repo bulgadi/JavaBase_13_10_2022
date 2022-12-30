@@ -20,7 +20,6 @@ public class Test {
             for (int i : j) {
                 System.out.print(i + "\t");
             }
-
         }
 
         double average = 0;
