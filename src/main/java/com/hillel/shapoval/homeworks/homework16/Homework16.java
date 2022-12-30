@@ -12,10 +12,10 @@ public class Homework16 {
         }
         return false;
     }
-    public static double arithmeticMean(int[] mas1, int a) {
+    public static double arithmeticMean(int[] mas1) {
         double average = 0;
 
-        for (int i = 0; i < a; i++) {
+        for (int i = 0; i < mas1.length; i++) {
                 average = average + mas1[i];
         }
         average /= mas1.length;
