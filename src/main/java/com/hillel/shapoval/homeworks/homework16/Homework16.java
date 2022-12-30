@@ -14,13 +14,13 @@ public class Homework16 {
     }
     public static double arithmeticMean(int[] mas) {
         double average = 0;
+        double sum = 0;
 
         if (mas.length > 0){
-
             for (int j : mas) {
-                average = average + j;
-                average /= mas.length;
+                sum = average + j;
             }
+            average = sum / mas.length;
         }
         return average;
     }
