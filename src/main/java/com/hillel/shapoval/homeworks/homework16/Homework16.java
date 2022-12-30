@@ -12,7 +12,7 @@ public class Homework16 {
         }
         return false;
     }
-    public static void ArithmeticMean(int[][] mas1, int a, int b) {
+    public static void arithmeticMean(int[][] mas1, int a, int b) {
         double average = 0;
         double average1 = 0;
 
